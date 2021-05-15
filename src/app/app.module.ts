@@ -17,33 +17,21 @@ import { ErreurSaisieComponent } from './erreur-saisie/erreur-saisie.component';
 import { EtudiantComponent } from   './etudiant/etudiant.component'
 import { FinanceComponent } from   './finance/finance.component';
 import { FormateurComponent } from   './formateur/formateur.component'
-import {InscriptionComponent} from './inscription/inscription.component'
 import { MotPasseEnvoyerComponent } from './mot-passe-envoyer/mot-passe-envoyer.component';
 import {MotPasseOublierComponent} from './mot-passe-oublier/mot-passe-oublier.component'
 import { FormsModule } from '@angular/forms';
-import { RegisterComponent } from './register/register.component';
-import { ModificationComponent } from './modification/modification.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
-
-    AdminComponent,
-    ErreurSaisieComponent,
+    LoginComponent,
     EtudiantComponent,
     FinanceComponent,
     FormateurComponent,
-
+    ErreurSaisieComponent,
     MotPasseEnvoyerComponent,
-
     MotPasseOublierComponent,
-    LoginComponent,
-    InscriptionComponent,
-    RegisterComponent,
-    ModificationComponent,
-
-
-
+    AdminComponent
   ],
   imports: [
 
