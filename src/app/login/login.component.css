@@ -144,7 +144,6 @@
         justify-content: center;
         flex-direction: column;
         padding: 9.5px;
-
     }
     .fa-google {
         background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
@@ -215,7 +214,6 @@
             width: 26px;
             float: left;
         }
-
         .input-icons {
             width: 100%;
             margin-bottom: 10px;
@@ -223,15 +221,12 @@
         .input-icons input{
             margin: 0 10px;
         }
-
         .icon {
             padding: 10px;
             min-width: 40px;
         }
-
         .input-field {
             width: 100%;
             padding: 10px;
             text-align: center;
         }
-

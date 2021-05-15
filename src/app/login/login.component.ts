@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { LoginService } from './../services/login.service';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+=======
+import { Component, OnInit } from '@angular/core';
+>>>>>>> 75209257272798ca737e3402ba19ceac5c0989b0
 
 @Component({
   selector: 'app-login',
@@ -10,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor(private LoginService:LoginService, private router:Router) { }
 
   ngOnInit(): void {
@@ -35,5 +40,11 @@ export class LoginComponent implements OnInit {
 
  }
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+>>>>>>> 75209257272798ca737e3402ba19ceac5c0989b0
 
 }
