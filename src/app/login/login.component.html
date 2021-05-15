@@ -1,65 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-</head>
-<body>
-  <div class="container h-100">
-	<div class="d-flex justify-content-center h-100">
-		<div id="user_card">
-			<div class="d-flex justify-content-center">
-				<img src="https://cdn2.iconfinder.com/data/icons/web-solid/32/user-512.png" id="brand_logo" alt="Logo">
-			</div>
-			<br>
-			<div class="d-flex justify-content-center form_container">
-				<form>
-					<div class="form-group mb-0">
-						<div class="input-group-append">
-							<span class="fab fa-google form-control-icon"></span>
-						</div>
-            <button type="submit" name="button" class="form-control" placeholder="connecter avec google">se connecter avec google</button>
-					</div>
-					<br>
-					<div class="form-group mb-1">
-							<label for="uname">Adress mail</label>
-							<div class="input-group-append">
-								<span class="fa fa-user form-control-icon"></span>
-							</div>
-							<input type="text" class="form-control" placeholder="exemple:XXXX@gmail.com">
-						</div>
-					<br>
-					<div class="form-group mb-2">
-						<label for="uname">Mot de pass</label>
-						<div class="input-group-append">
-							<span class="fas fa-lock form-control-icon"></span>
-						</div>
-						<input type="password" class="form-control" placeholder="Mot de Pass">
-					</div>
-				</form>
-			</div>
-			<div class="form-group">
-				<div class="d-flex justify-content-center mt-3 login_container">
-					<button type="submit" name="button" class="btn login_btn">Se connecter</button>
-				</div>
-			</div>
-			<div class="d-flex justify-content-center links">
-				<a href="#">Mot de pass oublié?</a>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
-</html>
-=======
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src=""></script>
 </head>
 <body>
     <div class="container h-100">
@@ -70,12 +16,15 @@
                 </div>
                 <br>
                 <div class="d-flex justify-content-center form_container">
-                    <form>
+                    <form (ngSubmit)="connection(f)" #f="ngForm">
                         <div class="form-group mb-0">
                             <div class="input-group-append">
                                 <span class="fab fa-google form-control-icon"></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="connecter avec google">
+                            <!-- <input type="text" class="form-control" placeholder="connecter avec google"> -->
+                       <button type="button" name="button" class="form-control" placeholder="connecter avec google">Se connecter avec google</button>
+                         <div class="g-signin2" data-onsuccess="onSignIn" data-longtitle="true"></div>
+
                         </div>
                         <br>
                         <div class="form-group mb-1">
@@ -83,7 +32,7 @@
                                 <div class="input-group-append">
                                     <span class="fa fa-user form-control-icon"></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="exemple:XXXX@gmail.com">
+                                <input type="text" class="form-control" name = "email" ngModel placeholder="exemple:XXXX@gmail.com">
                             </div>
                         <br>
                         <div class="form-group mb-2">
@@ -91,21 +40,23 @@
                             <div class="input-group-append">
                                 <span class="fas fa-lock form-control-icon"></span>
                             </div>
-                            <input type="password" class="form-control" placeholder="Mot de Pass">
+                            <input type="password" class="form-control" name="password" ngModel placeholder="Mot de Pass">
                         </div>
-                    </form>
-                </div>
-                <div class="form-group">
+
+
+                    <div class="form-group">
                     <div class="d-flex justify-content-center mt-3 login_container">
                         <button type="submit" name="button" class="btn login_btn">Se connecter</button>
                     </div>
                 </div>
+                    </form>
+                </div>
+
                 <div class="d-flex justify-content-center links">
-                    <a href="#">Mot de pass oublié?</a>
+                    <a [routerLink]="['/MotPasseOublier']">Mot de pass oublié?</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
->>>>>>> 19ee4532f82a56a2c3356936e5c30c65e0103a78

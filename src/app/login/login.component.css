@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 	/* Coded with love by Mutiullah Samim */
   @import "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
   body,
@@ -116,7 +116,7 @@
           padding: 10px;
           text-align: center;
       }
-=======
+
 	/* Coded with love by Hakassa */
     @import "https://pro.fontawesome.com/releases/v5.10.0/css/all.css";
     body,
@@ -144,7 +144,7 @@
         justify-content: center;
         flex-direction: column;
         padding: 9.5px;
-       
+
     }
     .fa-google {
         background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
@@ -165,11 +165,11 @@
         height: 100px;
         width: 150px;
         border-radius: 50%;
-        
+
     }
     .form-group .form-control {
         padding-left: 2.375rem;
-     
+
     }
     .mb-0{
         padding: 0 1.35rem;
@@ -201,8 +201,8 @@
         color: white !important;
         padding: top 5px;
     }
-    
-    
+
+
     .login_container {
         padding: 0 1.35rem;
         border-radius: 50px;
@@ -215,7 +215,7 @@
             width: 26px;
             float: left;
         }
-          
+
         .input-icons {
             width: 100%;
             margin-bottom: 10px;
@@ -223,15 +223,15 @@
         .input-icons input{
             margin: 0 10px;
         }
-          
+
         .icon {
             padding: 10px;
             min-width: 40px;
         }
-          
+
         .input-field {
             width: 100%;
             padding: 10px;
             text-align: center;
         }
->>>>>>> 19ee4532f82a56a2c3356936e5c30c65e0103a78
+
