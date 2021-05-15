@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="jumbotron text-left" id="header">
+            <div>
+                <h2 id="policeEtud"> <img src="https://img.icons8.com/metro/452/reviewer-male.png" id="img"> <a href="#"
+                        id="ahrefEtud"> Espace Administrateur </a></h2>
+            </div>
+            <br><br>
+            <form name="inscription" method="post" action="" id="general">
+
+                <fieldset>
+
+                    <div style="text-align: left"><u><b>Prénom</b></u></div>
+                    <input id="all" type="text" class="form-control" placeholder="Prenom"><br>
+                    <div style="text-align: left"><u><b>Nom</b></u></div>
+                    <input type="text" class="form-control" placeholder="Nom"><br>
+
+                    <div style="text-align: left"><u><b>Date de Naissance</b></u></div>
+                    <input type="date" id="start" name="trip-start" value="XXXX-XX-XX" min="1900-01-01" max="2024-12-31"
+                        class="form-control">
+                    <br>
+                    <div style="text-align: left"><u><b>Pseudo</b></u></div>
+                    <input type="text" class="form-control" placeholder="Pseudo"><br>
+                    <div style="text-align: left"><u><b>Adress-Mail</b></u></div>
+                    <input type="text" class="form-control" placeholder="exemple:XXXX@gmail.com"><br>
+                    <div style="text-align: left"><u><b>Tel</b></u></div>
+                    <input type="text" class="form-control" placeholder="+221 XXX XX XX"><br>
+                    <legend>
+                        <h2><u><b>FORMULAIRE D'INSCRIPTION</b></u></h2>
+                        <p style="text-align:left">Remplissez soigneusement le formulaire d'inscription.</p>
+                    </legend>
+                    <br>
+                    <br>
+                    <div class="d-flex justify-content-center mt-3 login_container">
+                        <button type="submit" name="button" class="btn login_btn">Soumettre</button>
+                    </div>
+                </fieldset>
+            </form>
+            <br><br>
+        </div>
+        <br>
+        <div id="top">Tidiane Touré </div>
+        <br>
+        <div id="left">
+            <br>
+            <a href="#" id="deconnexion"><button id="button">
+                    <p><img src="https://image.flaticon.com/icons/png/512/69/69524.png" id="buttondeconnexion"> Accueil
+                    </p>
+                </button></a><br> <br>
+            <br><br><br>
+            <a href="#" id="deconnexion"><button id="button">
+                    <p><img src="https://image.flaticon.com/icons/png/512/64/64495.png" id="buttondeconnexion"> Gestion
+                        utilisateur </p>
+                </button></a>
+                <button  class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" [routerLink]="['/login']" href="#">   Liste    des utilisateurs</a>
+                      <a class="dropdown-item" [routerLink]="['/formulaire-inscription']" href="#"> Modifier  un utilisateur</a>
+                      <a class="dropdown-item" [routerLink]="['/formulaire-modification']" href="#">Ajouter un utilisateur</a>
+                    </div>
+                  </button >
+            <br><br><br>
+            <a href="#" id="deconnexion"><button id="button">
+                    <p><img src="https://icons-for-free.com/iconfiles/png/512/finance+money+icon-1320167749140141327.png"
+                            id="buttondeconnexion">Finance </p>
+                </button></a>
+            <br><br><br><br>
+            <a href="#" id="deconnexion"><button id="button">
+                    <p><img src="https://image.flaticon.com/icons/png/512/65/65882.png" id="buttondeconnexion">
+                        Formateur </p>
+                </button></a><br><br>
+            <br><br><br>
+            <a href="#" id="deconnexion"><button id="button">
+                    <p><img src="https://latelierduformateur.fr/wp-content/uploads/2017/07/computer-icon-2429310_1920-300x300.png"
+                            id="buttondeconnexion"> Etudiant </p>
+                </button></a><br>
+            <br><br><br>
+            <a href="#" id="deconnexion"><button id="button">
+                    <p><img src="https://img.icons8.com/material-sharp/452/dashboard.png" id="buttondeconnexion">
+                        Tableau de bord</p>
+                </button></a><br>
+            <br><br><br>
+            <a href="#" id="deconnexion"><button id="button">
+                    <p><img src="https://library.kissclipart.com/20181201/ae/kissclipart-dconnexion-icon-clipart-computer-icons-a5e702d3a1f49f3a.png"
+                            id="buttondeconnexion"> Deconnexion </p>
+                </button></a><br>
+            <br><br><br>
+        </div>
+
+        <div>
+
+            <p id="info">
+                Si vous voulez plus d'information rendez vous sur ce lien:<a
+                    href="https://www.blacmi.toutachatsn.com/realisations/"> Cliquez-ici</a>
+            </p>
+        </div>
+        <div class="jumbotron text-center" id="header">
+            <div>
+                <a href="#">
+                    <p id="copyright"> hakassa@copyright</p>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- <select name="niv">
+                        <option>Etudiant</option>
+                        <option>Fonctionnaire</option>
+                        <option>Employé au secteur privé</option>
+                    </select><br>-->
