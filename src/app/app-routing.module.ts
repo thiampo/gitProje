@@ -1,4 +1,7 @@
-import { MotPasseOublierComponent } from './mot-passe-oublier/mot-passe-oublier.component';
+import { ListeComponent } from './liste/liste.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { ModificationComponent } from './modification/modification.component';
+import { OublierComponent } from './oublier/oublier.component';
 import { ErreurSaisieComponent } from './erreur-saisie/erreur-saisie.component';
 import { AdminComponent } from './admin/admin.component';
 import { NgModule, Component } from '@angular/core';
@@ -14,12 +17,15 @@ import { FinanceComponent } from './finance/finance.component';
 const routes: Routes = [
 
   {path:'login',component:LoginComponent},
-  {path:'etudiant',component:EtudiantComponent},
-  {path:'formateur',component:FormateurComponent},
-  {path:'finance',component:FinanceComponent},
- {path:'admin',component:AdminComponent},
+  {path:'etudiant/:id',component:EtudiantComponent},
+  {path:'formateur/:id',component:FormateurComponent},
+  {path:'finance/:id',component:FinanceComponent},
+ {path:'admin/:id',component:AdminComponent},
  {path:'ErreurSaisie',component:ErreurSaisieComponent},
- {path:'MotPasseOublier',component:MotPasseOublierComponent},
+ {path:'oublier',component:OublierComponent},
+ {path:'modification',component:ModificationComponent},
+ {path:'inscription',component:InscriptionComponent},
+ {path:'liste',component:ListeComponent},
 
 ];
 

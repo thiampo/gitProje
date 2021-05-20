@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MotPasseEnvoyerComponent } from './mot-passe-envoyer.component';
+import { EnvoyerComponent } from './envoyer.component';
 
-describe('MotPasseEnvoyerComponent', () => {
-  let component: MotPasseEnvoyerComponent;
-  let fixture: ComponentFixture<MotPasseEnvoyerComponent>;
+describe('EnvoyerComponent', () => {
+  let component: EnvoyerComponent;
+  let fixture: ComponentFixture<EnvoyerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MotPasseEnvoyerComponent ]
+      declarations: [ EnvoyerComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MotPasseEnvoyerComponent);
+    fixture = TestBed.createComponent(EnvoyerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

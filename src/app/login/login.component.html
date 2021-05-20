@@ -32,7 +32,7 @@
                                 <div class="input-group-append">
                                     <span class="fa fa-user form-control-icon"></span>
                                 </div>
-                                <input type="text" class="form-control" name = "email" ngModel placeholder="exemple:XXXX@gmail.com">
+                                <input  ngModel type="text" class="form-control" name = "email"  placeholder="exemple:XXXX@gmail.com">
                             </div>
                         <br>
                         <div class="form-group mb-2">
@@ -40,7 +40,7 @@
                             <div class="input-group-append">
                                 <span class="fas fa-lock form-control-icon"></span>
                             </div>
-                            <input type="password" class="form-control" name="password" ngModel placeholder="Mot de Pass">
+                            <input ngModel  type="password" class="form-control" name="password" placeholder="Mot de Pass">
                         </div>
 
 
@@ -49,11 +49,11 @@
                         <button type="submit" name="button" class="btn login_btn">Se connecter</button>
                     </div>
                 </div>
-                    </form>
+                  </form>
                 </div>
 
                 <div class="d-flex justify-content-center links">
-                    <a [routerLink]="['/MotPasseOublier']">Mot de pass oublié?</a>
+                    <a [routerLink]="['/oublier']">Mot de pass oublié?</a>
                 </div>
             </div>
         </div>

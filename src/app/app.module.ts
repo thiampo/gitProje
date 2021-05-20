@@ -1,5 +1,5 @@
 
-import { NgModule } from '@angular/core';
+import { NgModule  } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatIconModule} from '@angular/material/icon';
 import {HttpClientModule} from "@angular/common/http";
@@ -17,10 +17,14 @@ import { ErreurSaisieComponent } from './erreur-saisie/erreur-saisie.component';
 import { EtudiantComponent } from   './etudiant/etudiant.component'
 import { FinanceComponent } from   './finance/finance.component';
 import { FormateurComponent } from   './formateur/formateur.component'
-import { MotPasseEnvoyerComponent } from './mot-passe-envoyer/mot-passe-envoyer.component';
-import {MotPasseOublierComponent} from './mot-passe-oublier/mot-passe-oublier.component'
+
 import { FormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { ModificationComponent } from './modification/modification.component';
+import { OublierComponent } from './oublier/oublier.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { EnvoyerComponent } from './envoyer/envoyer.component';
+import { ListeComponent } from './liste/liste.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,9 +33,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     FinanceComponent,
     FormateurComponent,
     ErreurSaisieComponent,
-    MotPasseEnvoyerComponent,
-    MotPasseOublierComponent,
-    AdminComponent
+
+    AdminComponent,
+    ModificationComponent,
+    OublierComponent,
+    InscriptionComponent,
+    EnvoyerComponent,
+    ListeComponent
   ],
   imports: [
 
@@ -42,7 +50,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatIconModule,
     FormsModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+
+
 
 
   ],

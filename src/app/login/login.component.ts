@@ -2,6 +2,7 @@ import { LoginService } from './../login.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { any } from 'sequelize/types/lib/operators';
 
 @Component({
   selector: 'app-login',
@@ -14,26 +15,29 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  idUser:any
+  prenomUser:any
+
   connection(form){
     console.log("hello")
     console.log(form.value)
     return this.LoginService.donne(form.value).subscribe((resultat:any)=>{
       console.log(resultat)
-      if(resultat.role==="financier"){
-        this.router.navigate(['finance'])
+      this.idUser=resultat.userInfo.userId
+      console.log(this.idUser)
+      if(resultat.userInfo.role==="finance"){
+        this.router.navigate(['finance/'+this.idUser])
       }
-      else if (resultat.role==="Formateur") {
-        this.router.navigate(['formateur'])
-      } else if(resultat.role==="etudiant") {
-        this.router.navigate(['etudiant'])
+      else if (resultat.userInfo.role==="Formateur") {
+        this.router.navigate(['Formateur/'+this.idUser])
+      }else if(resultat.userInfo.role==="etudiant"){
+        this.router.navigate(['etudiant/'+this.idUser])
       }
-      else if(resultat.role==="Admin"){
-        this.router.navigate(['admin'])
+      else if(resultat.userInfo.role==="admin"){
+        var list = resultat.tasks
+        this.router.navigate(['admin/'+this.idUser])
+        console.log(resultat.task)
       }
-
- })
-
+  })
  }
-
-
 }
